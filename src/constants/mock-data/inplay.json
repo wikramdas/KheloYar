@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "time": "Today | 2:00 PM",
+    "team1": "India",
+    "team2": "Pakistan",
+    "matchType": "ODI Match",
+    "star": "empty",
+    "scores": [
+      {
+        "team1": "1.78",
+        "team1_subheading": "8",
+        "team2": "1.78",
+        "team2_subheading": "8"
+      },
+      {
+        "team1": "",
+        "team1_subheading": "",
+        "team2": "",
+        "team2_subheading": "",
+        "is_empty": true
+      },
+      {
+        "team1": "1.78",
+        "team1_subheading": "8",
+        "team2": "1.78",
+        "team2_subheading": "8"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "time": "Today | 2:00 PM",
+    "team1": "Barcelona",
+    "team2": "Al Nassar",
+    "matchType": "Premier League",
+    "star": "fill",
+    "scores": [
+      {
+        "team1": "1.78",
+        "team1_subheading": "8",
+        "team2": "1.78",
+        "team2_subheading": "8"
+      },
+      {
+        "team1": "1.78",
+        "team1_subheading": "8",
+        "team2": "1.78",
+        "team2_subheading": "8"
+      },
+      {
+        "team1": "1.78",
+        "team1_subheading": "8",
+        "team2": "1.78",
+        "team2_subheading": "8"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Exchange",
+    "icon": "https://assets-srv.s3.eu-west-1.amazonaws.com/midas-golden-touch-logo.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sportsbook",
+    "icon": "https://clientarea.relax-gaming.com/gameassets/beastmode/thumbnail2x/AS53NTAsPWkvV92MXL5q/Thumbnail_BeastMode_600x600.png"
+  },
+  {
+    "id": 3,
+    "title": "Casino",
+    "icon": "https://slotsia.com/uk/wp-content/uploads/sites/6/425x324_Gates-of-Olympus.png"
+  },
+  {
+    "id": 4,
+    "title": "Teen Patti",
+    "icon": "https://kndcdn.unicdn.net/polopoly_fs/1.1106350.1636487242!/image.png"
+  },
+  {
+    "id": 5,
+    "title": "Slot Games",
+    "icon": "https://evu65umjeus.exactdn.com/app/uploads/2023/06/Route-777.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Exchange",
+    "icon": "https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-26/256/Desperados-1-icon.png"
+  },
+  {
+    "id": 7,
+    "title": "Sportsbook",
+    "icon": "https://slotgods.co.uk/storage/app/media/online-slots/cash-truck-2-slot-by-quickspin-logo.webp"
+  },
+  {
+    "id": 8,
+    "title": "Casino",
+    "icon": "https://static.casino.guru/pict/393964/Coin-Quest-2.png"
+  }
+]

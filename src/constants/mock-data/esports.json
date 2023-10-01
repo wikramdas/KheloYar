@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "CS-GO",
+    "icon": "https://pngimg.com/d/counter_strike_PNG87.png",
+    "popularity": 70
+  },
+  {
+    "id": 3,
+    "title": "CALL OF DUTY",
+    "icon": "https://www.freeiconspng.com/thumbs/call-of-duty-png/call-of-duty-png-transparent-0.png",
+    "popularity": 80
+  },
+  {
+    "id": 2,
+    "title": "PUBG",
+    "icon": "https://www.pngall.com/wp-content/uploads/3/PUBG-PNG-File.png",
+    "popularity": 90
+  },
+  {
+    "id": 4,
+    "title": "CS-GO",
+    "icon": "https://pngimg.com/d/counter_strike_PNG87.png",
+    "popularity": 70
+  }
+]
