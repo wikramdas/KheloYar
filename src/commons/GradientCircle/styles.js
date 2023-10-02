@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 export const styles = ({theme}) =>
   StyleSheet.create({
@@ -19,5 +19,6 @@ export const styles = ({theme}) =>
     image: {
       height: 130,
       width: 130,
+      bottom: Platform.OS === 'android' ? 8 : 0,
     },
   });

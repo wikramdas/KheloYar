@@ -9,7 +9,8 @@ export const styles = ({disabled, style, theme} = {}) =>
       alignItems: 'center',
       backgroundColor: theme?.headerBGColor,
       paddingHorizontal: 10,
-      height: 45,
+      height: 60,
+      zIndex: 999,
       ...commonStyle(theme).bottomShadow,
       ...(style && style),
     },
@@ -20,7 +21,6 @@ export const styles = ({disabled, style, theme} = {}) =>
     },
     leftIconInnerContainer: {
       paddingRight: 10,
-      paddingTop: 5,
       ...(style && style),
     },
     rightIconContainer: {

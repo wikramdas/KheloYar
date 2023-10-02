@@ -4,7 +4,7 @@ import {View} from 'react-native';
 import {styles} from './styles';
 import {useSelector} from 'react-redux';
 import {MockData} from '@src/constants';
-import {FlatList} from '@src/core-ui';
+import {ScrollView} from '@src/core-ui';
 import utils from '@src/utils/utils';
 
 export const Endorsements = () => {
@@ -12,10 +12,8 @@ export const Endorsements = () => {
   return (
     <View style={styles().container}>
       <BoxViewWithTag label={'Endorsements'}>
-        <FlatList
-          horizontal={true}
-          data={MockData.endorsements}
-          renderItem={({item, index}) => {
+        <ScrollView horizontal={true}>
+          {MockData?.endorsements.map((item, index) => {
             return (
               <View
                 key={index.toString()}
@@ -27,8 +25,8 @@ export const Endorsements = () => {
                 <BigHeading style={styles().name}>{item?.name}</BigHeading>
               </View>
             );
-          }}
-        />
+          })}
+        </ScrollView>
       </BoxViewWithTag>
     </View>
   );

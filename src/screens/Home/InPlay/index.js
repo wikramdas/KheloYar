@@ -3,7 +3,7 @@ import React from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
 import {MockData, SVG} from '@src/constants';
-import {FlatList} from '@src/core-ui';
+import {ScrollView} from '@src/core-ui';
 import {commonStyle} from '@src/styles';
 import {InPlayItem} from './InPlayItem';
 
@@ -19,16 +19,15 @@ export const InPlay = () => {
             <SVG.BALL_3 style={styles({}).ballIcon} />
           </View>
         }>
-        <FlatList
-          data={MockData.inplay}
-          renderItem={({item, index}) => {
+        <ScrollView>
+          {MockData.inplay.map((item, index) => {
             return (
               <View key={index.toString()}>
                 <InPlayItem item={item} />
               </View>
             );
-          }}
-        />
+          })}
+        </ScrollView>
       </BoxViewWithTag>
     </View>
   );

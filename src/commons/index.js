@@ -16,3 +16,4 @@ export * from './BoxViewWithTitle';
 export * from './MatchupCard';
 export * from './GradientProgress';
 export * from './PlayIcon';
+export * from './BackgroundVector';

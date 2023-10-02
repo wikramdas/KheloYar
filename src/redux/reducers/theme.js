@@ -12,7 +12,7 @@ const themeSlice = createSlice({
   reducers: {},
   extraReducers: builder => {
     builder.addCase(changeTheme.fulfilled, (state, {payload}) => {
-      state = payload?.theme ?? {};
+      return {...state, ...payload?.theme};
     });
   },
 });

@@ -1,9 +1,9 @@
-import {BoxViewWithTitle, Image} from '@src/commons';
+import {BoxViewWithTitle, Image, TextButton} from '@src/commons';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {SVG} from '@src/constants';
-import {FlatList} from '@src/core-ui';
+import {ScrollView} from '@src/core-ui';
 import {commonStyle} from '@src/styles';
 import utils from '@src/utils/utils';
 
@@ -25,21 +25,22 @@ export const Games = ({data, heading, subHeading}) => {
           data.map((parent, parentIdx) => {
             return (
               <View key={parentIdx?.toString()}>
-                <FlatList
-                  data={parent?.games}
+                <ScrollView
                   horizontal={true}
-                  containerStyle={styles(theme).flatlistContainer}
-                  renderItem={({item, index}) => {
+                  containerStyle={styles(theme).flatlistContainer}>
+                  {parent?.games.map((item, index) => {
                     return (
-                      <View key={index?.toString()}>
+                      <TextButton
+                        onPress={() => utils.alert('game detail')}
+                        key={index?.toString()}>
                         <Image
                           source={{uri: item?.icon}}
                           style={styles(theme).gameImage}
                         />
-                      </View>
+                      </TextButton>
                     );
-                  }}
-                />
+                  })}
+                </ScrollView>
               </View>
             );
           })}

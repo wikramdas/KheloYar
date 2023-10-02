@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Wrapper} from '@src/commons';
+import {BackgroundVector, Header, Text, Wrapper} from '@src/commons';
 import {ScrollView} from '@src/core-ui';
 
 import {Banner} from './Banner';
@@ -19,12 +19,18 @@ import {View} from 'react-native';
 import {commonStyle} from '@src/styles';
 import {SettingsAndSocial} from './SettingsAndSocial';
 import {styles} from './styles';
+import {useSelector} from 'react-redux';
+import {Pages} from './Pages';
+import {PaymentGatways} from './PaymentGatways';
+import {WhatsappContact} from './WhatsappContact';
 
 export const Home = () => {
+  const theme = useSelector(store => store?.theme);
   return (
     <Wrapper>
       <Header />
       <ScrollView>
+        <BackgroundVector />
         <Categories />
         <View style={styles.container}>
           <Banner
@@ -36,9 +42,12 @@ export const Home = () => {
             onPress={() => utils.alert('Signup Now')}
             gradient
           />
+          <BackgroundVector />
           <PopularToday />
+          <BackgroundVector />
           <InPlay />
           <FeaturedGames />
+          <BackgroundVector />
           <Banner
             infoText={'GET A NEW ID INSTANTLY'}
             heading={'OVER WHATSAPP'}
@@ -47,14 +56,39 @@ export const Home = () => {
             onPress={() => utils.alert('get ID now')}
             reverse={true}
           />
+          <BackgroundVector />
           <CasinoGames />
+          <BackgroundVector />
           <GameOfMonth />
+          <BackgroundVector />
           <ESports />
+          <BackgroundVector />
           <DownloadAppBanner />
+          <BackgroundVector />
           <Endorsements />
+          <BackgroundVector />
           <Tutorials />
-          <View style={commonStyle().lineSeparator} />
+          <BackgroundVector />
+          <View style={commonStyle(theme).lineSeparator} />
           <SettingsAndSocial />
+          <BackgroundVector />
+          <View style={commonStyle(theme).lineSeparator} />
+          <Pages />
+          <View style={commonStyle(theme).lineSeparator} />
+          <PaymentGatways />
+          <View style={commonStyle(theme).lineSeparator} />
+          <BackgroundVector />
+          <View style={styles.aboutInfoTextContainer}>
+            <Text style={styles.aboutInfoText}>
+              Kheloyar.net is a product of Kheloyar Group which operates in
+              accordance with the License granted by SVG Gambling Commission
+              under the license
+            </Text>
+            <Text style={styles.copyrightText}>
+              © 2022 Kheloyar. All rights reserved.
+            </Text>
+          </View>
+          <WhatsappContact />
         </View>
       </ScrollView>
     </Wrapper>

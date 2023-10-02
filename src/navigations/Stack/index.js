@@ -2,7 +2,8 @@ import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {ROUTES} from '@src/constants';
-import {Home, Splash} from '@src/screens';
+import {Splash} from '@src/screens';
+import {BottomTabs} from '../BottomTabs';
 
 const AuthStack = createNativeStackNavigator();
 
@@ -16,7 +17,7 @@ export const AuthNavigator = () => {
         fullScreenGestureEnabled: true,
       }}>
       <AuthStack.Screen name={ROUTES.SPLASHSCREEN} component={Splash} />
-      <AuthStack.Screen name={ROUTES.HOME} component={Home} />
+      <AuthStack.Screen name={ROUTES.HOME} component={BottomTabs} />
     </AuthStack.Navigator>
   );
 };

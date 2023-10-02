@@ -5,6 +5,10 @@ export class IMG {
   static VECTOR_LEFT = require('@assets/images/icons/vector-left.png');
   static VECTOR_RIGHT = require('@assets/images/icons/vector-right.png');
   static LIVE = require('@assets/images/icons/live.png');
+
+  static BG_COLOR_1 = require('@assets/images/icons/secondary-color-bg.png');
+  static BG_COLOR_2 = require('@assets/images/icons/tertiary-color-bg.png');
+
   static SHADOW_LEFT = require('@assets/images/shadow-left.png');
   static GAME_BG = require('@assets/images/game-bg.png');
   static DOWNLOAD_APP_BANNER = require('@assets/images/download-app-banner.png');
@@ -28,6 +32,8 @@ export class IMG {
   static FLAG_NZ = require('@assets/images/flags/nz.png');
   static FLAG_FCB = require('@assets/images/flags/fcb.png');
   static FLAG_ALNASSR = require('@assets/images/flags/alnassr.png');
+
+  static BT_INPLAY = require('@assets/images/icons/bottom-tab/inplay.png');
 
   static USER_IMAGE = require('@assets/images/icons/user-image.jpg');
 }

@@ -58,7 +58,11 @@ export const Header = ({style}) => {
         </View>
         <View style={styles({}).userImageContainer}>
           <TextButton onPress={() => onProfileClick()}>
-            <Image source={IMG.PROFILE} style={styles({}).userImage} />
+            <Image
+              resizeMode={'contain'}
+              source={IMG.PROFILE}
+              style={styles({}).userImage}
+            />
           </TextButton>
         </View>
       </View>

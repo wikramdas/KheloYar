@@ -18,4 +18,15 @@ export const styles = theme =>
       flex: 1,
       padding: 15,
     },
+    socialIconContainer: {
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      padding: 10,
+    },
+    socialIcon: {
+      height: 35,
+      width: 35,
+    },
   });

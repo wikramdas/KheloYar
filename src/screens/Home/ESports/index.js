@@ -5,12 +5,13 @@ import {
   GradientProgress,
   Image,
   Text,
+  TextButton,
 } from '@src/commons';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {IMG, MockData} from '@src/constants';
-import {FlatList, ImageBackground} from '@src/core-ui';
+import {ImageBackground, ScrollView} from '@src/core-ui';
 import utils from '@src/utils/utils';
 
 export const ESports = () => {
@@ -19,11 +20,10 @@ export const ESports = () => {
     <View style={styles({}).container}>
       <BoxViewWithTitle heading={'E-Sports'} subHeading={"LET'S PLAY"}>
         <View>
-          <FlatList
-            data={MockData?.esports}
+          <ScrollView
             horizontal={true}
-            containerStyle={styles(theme).flatlistContainer}
-            renderItem={({item, index}) => {
+            containerStyle={styles(theme).flatlistContainer}>
+            {MockData?.esports.map((item, index) => {
               return (
                 <View key={index?.toString()} style={styles().itemContainer}>
                   <ImageBackground
@@ -48,8 +48,8 @@ export const ESports = () => {
                   </View>
                 </View>
               );
-            }}
-          />
+            })}
+          </ScrollView>
         </View>
       </BoxViewWithTitle>
     </View>
@@ -59,7 +59,7 @@ export const ESports = () => {
 const styles = theme =>
   StyleSheet.create({
     container: {flex: 1},
-    flatlistContainer: {paddingVertical: 5},
+    flatlistContainer: {paddingVertical: 10},
     itemContainer: {
       alignItems: 'center',
       justifyContent: 'center',
